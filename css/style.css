@@ -80,8 +80,6 @@ body {
 
 .posts-element-big {
 	flex-basis: 66%;
-    display: block;
-    overflow: hidden;
 }
 
 .posts-element-big .posts-info {
@@ -100,8 +98,7 @@ body {
 }
 
 .posts-element-big img {
-	height: 100%;
-    width: auto;
+	flex-grow: 1;
 }
 
 .posts-element-big::after {
@@ -112,4 +109,29 @@ body {
 	left: 0;
 	top: 0;
 	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+
+@media screen and (max-width: 980px) {
+    .posts-date {
+        font-size: 12px;
+    }
+
+    .posts-info{
+        padding: 10px 15px 15px 15px;
+    }
+
+    .posts-info h2 a {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .posts-info h2 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .posts-element-big .posts-info a {
+        font-size: 20px;
+        line-height: 26px;
+    }
 }
