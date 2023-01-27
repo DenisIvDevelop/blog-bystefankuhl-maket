@@ -135,3 +135,36 @@ body {
         line-height: 26px;
     }
 }
+
+@media screen and (max-width: 768px) {
+	.posts-element {
+		flex-basis: 49%;
+	}
+
+	.posts-element-big img {
+		flex-grow: 0;
+	}
+
+	.posts-element-big .posts-info {
+		position: static;
+		left: auto;
+		bottom: auto;
+		padding: 10px 15px 15px 15px;
+	}
+
+	.posts-element-big::after {
+		display: none;
+	}
+
+	.posts-element-big .posts-info a {
+		font-size: 16px;
+		line-height: 24px;
+		color: #000;
+	}
+}
+
+@media screen and (max-width: 480px) {
+    .posts-element {
+        flex-basis: 100%;
+    }
+}
